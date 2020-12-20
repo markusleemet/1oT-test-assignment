@@ -1,8 +1,8 @@
 <template lang="pug">
   .wind-component.custom-card
     h4.card-heading {{ windDay.name }}
-    font-awesome-icon.custom-icon(:icon="['fas', 'wind']")
     hr
+    font-awesome-icon.custom-icon(:icon="['fas', 'sun']")
     p
       span Direction:
       |  {{ windDay.direction }}
@@ -15,6 +15,8 @@
     p
       span Gust:
       |  {{ windDay.gust }}
+    hr.my-2
+    font-awesome-icon.custom-icon(:icon="['fas', 'moon']")
     p
       span Direction:
       |  {{ windNight.direction }}

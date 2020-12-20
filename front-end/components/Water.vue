@@ -4,9 +4,12 @@
       b-col(cols="12" lg="5")
         h4 Sea
         p {{ seaNight }}
-      b-col(cols="12" lg="5")
+      b-col(cols="12" lg="5").d-flex.flex-column
         h4 Peipsi
+        font-awesome-icon.custom-icon(:icon="['fas', 'sun']")
         p {{ peipsiDay }}
+        hr.my-2
+        font-awesome-icon.custom-icon(:icon="['fas', 'moon']")
         p {{ peipsiNight }}
 </template>h
 
@@ -37,8 +40,16 @@ export default {
 <style lang="scss">
 .water-component {
   h4{
-    margin-bottom: 2rem;
     text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .custom-icon{
+    width: 50px;
+    height: 50px;
+    margin: 1rem auto;
   }
 }
 </style>

@@ -6,8 +6,9 @@
       span Phenomenon:
       |  {{ phenomenon }}
     p
-      span Max temperature:
-      |  {{ tempMax }}
+      span(v-if="day") Max temperature:
+      span(v-else) Min temperature:
+      |  {{ tempMax }}°C
     p {{ description }}
 </template>
 
@@ -36,12 +37,5 @@ export default {
 </script>
 
 <style lang="scss">
-.day-component {
-  display: flex;
-  flex-flow: column nowrap;
-  border: 1px solid black;
-  background: linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url("~assets/day.jpg");
-  background-size: cover;
-  margin: 1rem;
-}
+.day-component {}
 </style>

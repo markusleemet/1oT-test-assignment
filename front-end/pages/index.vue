@@ -24,7 +24,7 @@ export default {
 
 <style lang="scss">
 body{
-  background: #efefef;
+  background: #E3E2CE;
   color: #0a0a0a;
 }
 .index-page {
@@ -33,7 +33,13 @@ body{
     margin-bottom: 4rem;
     .section-heading{
       text-align: center;
+      text-transform: uppercase;
       margin-bottom: 3rem;
+    }
+    .underlined-heading{
+      text-decoration: underline;
+      text-decoration-style: solid;
+      text-decoration-color: #407a56;
     }
     .custom-card{
       text-align: center;
@@ -41,15 +47,12 @@ body{
       margin: 1rem;
       display: flex;
       flex-flow: column nowrap;
-      border: 2px solid black;
+      border: 3px solid #407a56;;
       border-radius: 10px;
       .custom-icon{
-        width: 60px;
-        height: 60px;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        margin-left: auto;
-        margin-right: auto;
+        width: 50px;
+        height: 50px;
+        margin: 1rem auto;
       }
       .card-heading{
         text-align: center;

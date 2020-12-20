@@ -1,7 +1,7 @@
 <template lang="pug">
   #long-forecast-component.custom-section
     b-container
-      h2.section-heading Long forecast
+      h2.section-heading.underlined-heading Long forecast
       .day-forecast(v-for="forecast in weatherForecast.forecast")
         b-button(v-b-toggle="`${forecast.date}`")
           font-awesome-icon(:icon="['fas', 'calendar-day']")

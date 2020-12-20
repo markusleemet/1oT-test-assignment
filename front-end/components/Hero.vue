@@ -2,11 +2,11 @@
   b-jumbotron.hero-component
     b-container.custom-section
       template#header
-        h1.custom-heading Weather app
+        h1.section-heading.underlined-heading Weather app
       template#lead This website is test assignment for 1oT internship position.
         br
         |  It displays Estonian weather information.
-      hr.my-4
+      .my-5
       b-button(href="#" v-scroll-to="'.today-forecast-component'" variant="success")
         font-awesome-icon.my-auto.mr-2(:icon="['fas', 'calendar-day']")
         | Today's forecast
@@ -24,7 +24,6 @@ export default {
 </script>
 
 <style lang="scss">
-$success: #407a56;
 .hero-component {
   background-image: url("~assets/hero-bg.jpg");
   background-size: cover;
@@ -35,13 +34,14 @@ $success: #407a56;
   font-weight: 700;
   h1{
     font-size: 4rem;
-    text-transform: uppercase;
+    text-align: left !important;
   }
   .btn{
-    margin: 1rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
     padding: 1rem;
     display:inline-flex;
-    background-color: $success;
+    background-color: #407a56;
   }
   .custom-section{
 
