@@ -29,7 +29,7 @@ public class WeatherService {
                 .GET()
                 .header("Content-Type", "application/json")
                 .header("User-Agent", "PostmanRuntime/7.26.8")
-                .uri(URI.create("http://www.ilmateenistus.ee/ilma_andmed/xml/forecast.php?lang=en"))
+                .uri(URI.create("http://www.ilmateenistus.ee/ilma_andmed/xml/forecast.php?lang=eng"))
                 .build();
 
         HttpResponse<String> httpResponse = httpClient.send(httpRequest, HttpResponse.BodyHandlers.ofString(Charset.forName("iso-8859-1")));
