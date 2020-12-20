@@ -2,14 +2,14 @@
 .location-component.custom-card
   h4.card-heading {{ placeDay.name }}
   hr
-  b-img.custom-icon.mx-auto(src="~assets/icon/day.svg")
+  font-awesome-icon.custom-icon(:icon="['fas', 'sun']")
   p
     span Phenomenon:
     |  {{ placeDay.phenomenon }}
   p
     span Max temperature:
     |  {{ placeDay.tempMax }}°C
-  b-img.custom-icon.mx-auto(src="~assets/icon/night.svg")
+  font-awesome-icon.custom-icon(:icon="['fas', 'moon']")
   p
     span Phenomenon:
     |  {{ placeNight.phenomenon }}

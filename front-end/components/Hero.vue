@@ -7,9 +7,13 @@
         br
         |  It displays Estonian weather information.
       hr.my-4
-      b-button(href="#" v-scroll-to="'.today-forecast-component'" variant="success") today forecast
+      b-button(href="#" v-scroll-to="'.today-forecast-component'" variant="success")
+        font-awesome-icon.my-auto.mr-2(:icon="['fas', 'calendar-day']")
+        | Today's forecast
       br
-      b-button(href="#" v-scroll-to="'#long-forecast-component'" variant="success") long forecast
+      b-button(href="#" v-scroll-to="'#long-forecast-component'" variant="success")
+        font-awesome-icon.my-auto.mr-2(:icon="['fas', 'calendar-alt']")
+        | Long forecast
 
 </template>
 

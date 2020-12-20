@@ -1,7 +1,7 @@
 <template lang="pug">
   .day-component.custom-card
-    b-img.custom-icon.mx-auto(src="~assets/icon/day.svg" v-if="day")
-    b-img.custom-icon.mx-auto(src="~assets/icon/night.svg" v-else)
+    font-awesome-icon.custom-icon(:icon="['fas', 'sun']" v-if="day")
+    font-awesome-icon.custom-icon(:icon="['fas', 'moon']" v-else)
     p
       span Phenomenon:
       |  {{ phenomenon }}

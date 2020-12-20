@@ -1,7 +1,7 @@
 <template lang="pug">
   .wind-component.custom-card
     h4.card-heading {{ windDay.name }}
-    b-img.custom-icon.mx-auto(src="~assets/icon/wind.svg")
+    font-awesome-icon.custom-icon(:icon="['fas', 'wind']")
     hr
     p
       span Direction:

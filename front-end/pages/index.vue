@@ -48,6 +48,8 @@ body{
         height: 60px;
         margin-top: 1rem;
         margin-bottom: 1rem;
+        margin-left: auto;
+        margin-right: auto;
       }
       .card-heading{
         text-align: center;
