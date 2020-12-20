@@ -1,6 +1,6 @@
 <template lang="pug">
 .location-component.custom-card
-  h3.place-heading {{ placeDay.name }}
+  h3.card-heading {{ placeDay.name }}
   hr
   b-img.custom-icon.mx-auto(src="~assets/icon/day.svg")
   p
@@ -42,7 +42,7 @@ export default {
   background-size: cover;
   background-position-y: center;
   flex-grow: 1;
-  .place-heading{
+  .card-heading{
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;

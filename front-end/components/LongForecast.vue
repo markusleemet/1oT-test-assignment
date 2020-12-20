@@ -5,10 +5,11 @@
       .day-forecast(v-for="forecast in weatherForecast.forecast")
         b-button(v-b-toggle="`${forecast.date}`") {{ forecast.date }}
         b-collapse(:id="forecast.date")
-          .collapse-container
-            day(:phenomenon="forecast.day.phenomenon" :temp-max="forecast.day.tempMax" :description="forecast.day.text" :day="true")
-            day(:phenomenon="forecast.night.phenomenon" :temp-max="forecast.night.tempMax" :description="forecast.night.text" :day="false")
-
+          b-row(align-h="center")
+            b-col.custom-column(cols="12" sm="6" lg="4")
+              day(:phenomenon="forecast.day.phenomenon" :temp-max="forecast.day.tempMax" :description="forecast.day.text" :day="true")
+            b-col.custom-column(cols="12" sm="6" lg="4")
+              day(:phenomenon="forecast.night.phenomenon" :temp-max="forecast.night.tempMax" :description="forecast.night.text" :day="false")
 </template>
 
 <script lang="js">
@@ -32,13 +33,6 @@ export default {
   .day-forecast {
     display: flex;
     flex-flow: column nowrap;
-
-    .collapse-container {
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-evenly;
-      align-items: center;
-    }
   }
 }
 </style>

@@ -1,7 +1,7 @@
 <template lang="pug">
   .index-page
     hero
-    today-forecast(:placesDay="weatherData.forecast[0].day.place" :placesNight="weatherData.forecast[0].night.place")
+    today-forecast(:todays-forecast="weatherData.forecast[0]")
     long-forecast(:weather-forecast="weatherData")
 </template>
 
@@ -9,7 +9,7 @@
 import Hero from '../components/Hero'
 import Day from '../components/Day'
 import LongForecast from '../components/LongForecast'
-import TodayForecast from '../components/TodayForecast'
+import TodayForecast from '../components/TodaysForecast'
 
 export default {
   components: { TodayForecast, LongForecast, Day, Hero },
@@ -48,6 +48,13 @@ body{
         height: 60px;
         margin-top: 1rem;
         margin-bottom: 1rem;
+      }
+      .card-heading{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
       }
     }
     span{
