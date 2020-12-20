@@ -53,6 +53,11 @@ body{
     span{
       font-weight: bold;
     }
+    .custom-column{
+      display: flex;
+      align-items: stretch;
+    }
+    .btn{}
   }
 }
 </style>
