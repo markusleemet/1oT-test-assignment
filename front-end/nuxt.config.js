@@ -71,6 +71,6 @@ export default {
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
   env: {
-    backendUrl: process.env.backendUrl || 'http://localhost:8080'
+    backendUrl: process.env.backendUrl || 'https://shielded-thicket-97656.herokuapp.com'
   }
 }
