@@ -37,7 +37,7 @@ $success: #407a56;
     margin: 1rem;
     padding: 1rem;
     display:inline-flex;
-    background-color: $success;;
+    background-color: $success;
   }
   .custom-section{
 

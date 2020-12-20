@@ -40,7 +40,6 @@ export default {
   display: flex;
   flex-flow: column nowrap;
   border: 1px solid black;
-
   background: linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url("~assets/day.jpg");
   background-size: cover;
   margin: 1rem;

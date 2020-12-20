@@ -3,7 +3,9 @@
     b-container
       h2.section-heading Long forecast
       .day-forecast(v-for="forecast in weatherForecast.forecast")
-        b-button(v-b-toggle="`${forecast.date}`") {{ forecast.date }}
+        b-button(v-b-toggle="`${forecast.date}`")
+          font-awesome-icon(:icon="['fas', 'calendar-day']")
+          |  {{ forecast.date }}
         b-collapse(:id="forecast.date")
           b-row(align-h="center")
             b-col.custom-column(cols="12" sm="6" lg="4")
@@ -33,6 +35,11 @@ export default {
   .day-forecast {
     display: flex;
     flex-flow: column nowrap;
+  }
+  .btn{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #407a56;
   }
 }
 </style>
