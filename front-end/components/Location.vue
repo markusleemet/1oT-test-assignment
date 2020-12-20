@@ -1,6 +1,6 @@
 <template lang="pug">
 .location-component.custom-card
-  h3.card-heading {{ placeDay.name }}
+  h4.card-heading {{ placeDay.name }}
   hr
   b-img.custom-icon.mx-auto(src="~assets/icon/day.svg")
   p

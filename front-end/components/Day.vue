@@ -39,8 +39,6 @@ export default {
 .day-component {
   display: flex;
   flex-flow: column nowrap;
-  max-width: 300px;
-  height: 400px;
   border: 1px solid black;
 
   background: linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url("~assets/day.jpg");

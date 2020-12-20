@@ -1,6 +1,6 @@
 <template lang="pug">
   .wind-component.custom-card
-    h3.card-heading {{ windDay.name }}
+    h4.card-heading {{ windDay.name }}
     b-img.custom-icon.mx-auto(src="~assets/icon/wind.svg")
     hr
     p

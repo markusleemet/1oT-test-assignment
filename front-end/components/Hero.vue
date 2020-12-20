@@ -25,7 +25,7 @@ $success: #407a56;
   background-image: url("~assets/hero-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: center;
+  background-position-y: top;
   min-height: 100vh;
   border-radius: 0;
   font-weight: 700;
