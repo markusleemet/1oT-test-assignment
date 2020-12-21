@@ -6,7 +6,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlRootElement(name="forecasts")
+@XmlRootElement(name = "forecasts")
 public class Forecasts {
     ArrayList<Forecast> forecast;
 

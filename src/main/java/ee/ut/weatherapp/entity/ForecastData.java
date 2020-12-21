@@ -11,9 +11,9 @@ import java.util.ArrayList;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class ForecastData {
     String phenomenon;
-    @XmlElement(name="tempmin")
+    @XmlElement(name = "tempmin")
     int tempMin;
-    @XmlElement(name="tempmax")
+    @XmlElement(name = "tempmax")
     int tempMax;
     String text;
     ArrayList<Place> place;

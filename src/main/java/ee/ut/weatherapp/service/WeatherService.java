@@ -1,23 +1,18 @@
 package ee.ut.weatherapp.service;
 
 import ee.ut.weatherapp.entity.Forecasts;
-import org.apache.tomcat.util.digester.DocumentProperties;
 import org.springframework.stereotype.Service;
 
-import javax.sound.sampled.AudioFormat;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.StringReader;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-
 import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
 
 @Service
 public class WeatherService {

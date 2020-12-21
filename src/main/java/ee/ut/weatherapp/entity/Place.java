@@ -6,14 +6,14 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement(name="place")
+@XmlRootElement(name = "place")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Place {
     String name;
     String phenomenon;
-    @XmlElement(name="tempmin")
+    @XmlElement(name = "tempmin")
     int tempMin;
-    @XmlElement(name="tempmax")
+    @XmlElement(name = "tempmax")
     int tempMax;
 
     public String getName() {
