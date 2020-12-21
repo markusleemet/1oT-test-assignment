@@ -3,14 +3,18 @@
     b-container
       h2.section-heading.underlined-heading Long forecast
       .custom-section
-        h3.section-heading Chart
+        h3.section-heading
+          font-awesome-icon(:icon="['fas', 'chart-area']")
+          | Chart
         .custom-section
           h4 Day
           bar-chart(:data="{labels: labels, datasets: datasetsDay}" :options="barChartOptions")
         .custom-section
           h4 Night
           bar-chart(:data="{labels: labels, datasets: datasetsNight}" :options="barChartOptions")
-      h3.section-heading General
+      h3.section-heading
+        font-awesome-icon.custom-icon.mr-2(:icon="['fas', 'temperature-low']")
+        | General
       .day-forecast(v-for="forecast in weatherForecast.forecast")
         b-button(v-b-toggle="`${forecast.date}`")
           font-awesome-icon(:icon="['fas', 'calendar-day']")
