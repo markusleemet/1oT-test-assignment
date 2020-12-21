@@ -5,6 +5,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
+import java.util.List;
 
 
 @XmlRootElement
@@ -21,7 +22,7 @@ public class ForecastData {
     String sea;
     String peipsi;
 
-    public ArrayList<Wind> getWind() {
+    public List<Wind> getWind() {
         return wind;
     }
 
@@ -49,7 +50,7 @@ public class ForecastData {
         return text;
     }
 
-    public ArrayList<Place> getPlace() {
+    public List<Place> getPlace() {
         return place;
     }
 }

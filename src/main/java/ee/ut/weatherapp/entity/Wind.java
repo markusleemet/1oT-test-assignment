@@ -33,7 +33,7 @@ public class Wind {
         return speedMax;
     }
 
-    public int isGust() {
+    public int getGust() {
         return gust;
     }
 }
