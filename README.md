@@ -9,7 +9,7 @@ Link to application: https://5fe0a53779f8890008bef481--condescending-sammet-165d
 
 Link for weather API: http://www.ilmateenistus.ee/ilma_andmed/xml/forecast.php?lang=eng
 
-## Run application
+## To run application:
 ### Back-end
 Gradle and Java must be installed on hosting computer.
 Run `gradle build` followed by `gradle bootRun` to run back-end at port 8080.
@@ -21,7 +21,7 @@ Run `npm install` to download dependencies and then `npm run dev` to run front-e
 
 Used images are taken from https://unsplash.com/ (https://unsplash.com/license)
 
-## Main technologies:
+## Used technologies:
 
 ### Front-end:
 * Nuxtjs (https://nuxtjs.org/)
@@ -36,7 +36,7 @@ Used images are taken from https://unsplash.com/ (https://unsplash.com/license)
 ### Back-end:
 * Gradle (https://gradle.org/)
 * Java (https://www.oracle.com/java/)
-
+* Spring Boot (https://spring.io/projects/spring-boot)
   
 ### Hosting:
 * Heroku (https://www.heroku.com/home)
