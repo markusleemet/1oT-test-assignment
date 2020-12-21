@@ -6,9 +6,11 @@
       span Phenomenon:
       |  {{ phenomenon }}
     p
-      span(v-if="day") Max temperature:
-      span(v-else) Min temperature:
+      span Max temperature:
       |  {{ tempMax }}°C
+    p
+      span Min temperature:
+      |  {{ tempMin }}°C
     p {{ description }}
 </template>
 
@@ -17,6 +19,10 @@ export default {
   name: 'Day',
   props: {
     tempMax: {
+      type: Number,
+      default: 0
+    },
+    tempMin: {
       type: Number,
       default: 0
     },
